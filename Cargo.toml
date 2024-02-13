@@ -1,0 +1,13 @@
+[package]
+name = "rust_authentication_service"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = { version = "0.4.34", features = ["serde"] }
+diesel = { version = "2.1.4", features = ["postgres", "chrono", "uuid"] }
+envy = "0.4.2"
+serde = { version = "1.0.196", features = ["derive"] }
+uuid = { version = "1.7.0", features = ["serde", "v4"] }
