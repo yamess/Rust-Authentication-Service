@@ -1,6 +1,8 @@
 mod schema;
 mod settings;
 mod database;
+mod interfaces;
+mod helpers;
 
 use diesel::{Connection, PgConnection};
 use uuid::Uuid;
