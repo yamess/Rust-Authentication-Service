@@ -3,6 +3,8 @@ mod settings;
 mod database;
 mod interfaces;
 mod helpers;
+mod repositories;
+mod server;
 
 use diesel::{Connection, PgConnection};
 use uuid::Uuid;
