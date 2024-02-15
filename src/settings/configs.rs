@@ -6,7 +6,6 @@ pub struct DatabaseConfig {
     pub database_url: String,
 }
 
-
 pub struct GlobalConfig {
     pub database: DatabaseConfig,
 }

@@ -1,15 +1,15 @@
-mod schema;
-mod settings;
 mod database;
-mod interfaces;
 mod helpers;
+mod interfaces;
 mod repositories;
+mod schema;
 mod server;
+mod settings;
 
-use diesel::{Connection, PgConnection};
-use uuid::Uuid;
-use settings::configs::GlobalConfig;
 use database::models::UserModel;
+use diesel::{Connection, PgConnection};
+use settings::configs::GlobalConfig;
+use uuid::Uuid;
 
 fn create_connection(database_url: &str) -> PgConnection {
     PgConnection::establish(database_url)
@@ -20,14 +20,10 @@ fn main() {
     let config = GlobalConfig::new();
     let connection = &mut create_connection(&config.database.database_url);
 
-    let new_user = UserModel::new(
-        String::from("test@rust.com"),
-        String::from("password1234"),
-    );
+    let new_user = UserModel::new(String::from("test@rust.com"), String::from("password1234"));
     // Create a new user
     let created_user = new_user.create(connection);
     println!("New Use created: {:?}", created_user);
-
 
     // Read users
 
@@ -35,12 +31,12 @@ fn main() {
         &Uuid::parse_str("25c49b87-ad12-4ffe-85f3-3bad6d4f05d8").unwrap(),
         connection,
     );
-    let user = match user{
-        Some(user) => user ,
+    let user = match user {
+        Some(user) => user,
         None => {
             println!("User not found");
-            return
-        },
+            return;
+        }
     };
     // Update user
     /*
@@ -54,7 +50,6 @@ fn main() {
 
     let deleted_user = user.delete(connection);
     println!("{:?}", deleted_user);
-
 
     //println!("{:?}", new_user);
     //println!("{:?}", created_user);

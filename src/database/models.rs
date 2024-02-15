@@ -1,7 +1,10 @@
-use diesel::{AsChangeset, Insertable, OptionalExtension, PgConnection, Queryable, QueryDsl, RunQueryDsl, Selectable, SelectableHelper};
+use crate::schema::users;
+use diesel::{
+    AsChangeset, Insertable, OptionalExtension, PgConnection, QueryDsl, Queryable, RunQueryDsl,
+    Selectable, SelectableHelper,
+};
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
-use crate::schema::users;
 
 #[derive(Queryable, Insertable, Selectable, Deserialize, Serialize, AsChangeset, Debug)]
 #[diesel(table_name = users)]
