@@ -1,65 +1,56 @@
-use crate::interfaces::database_interface::IDatabase;
-use std::arch::aarch64::ST;
-use std::fmt::Debug;
-
-use crate::database::models::UserModel;
-use diesel::r2d2::ConnectionManager;
+use diesel::r2d2::{ConnectionManager, Pool};
 use diesel::PgConnection;
-use r2d2::{Pool, PooledConnection};
-use serde::{Deserialize, Serialize};
 
-pub struct PostgresDatabase {
-    pool: Pool<ConnectionManager<PgConnection>>,
+pub struct PostgresConnectionPool {
+    pub pool: Pool<ConnectionManager<PgConnection>>,
 }
 
-impl PostgresDatabase {
-    pub fn new(database_url: &str) -> Self {
-        let manager = ConnectionManager::<PgConnection>::new(database_url);
+impl PostgresConnectionPool {
+    fn new(database_url: &str, size: u32) -> Self {
         let pool = Pool::builder()
-            .build(manager)
-            .expect("Failed to create pool.");
-        PostgresDatabase { pool }
+            .max_size(size)
+            .test_on_check_out(true)
+            .build(ConnectionManager::new(database_url))
+            .expect("Failed to create pool");
+        log::info!("Postgres connection pool created");
+        PostgresConnectionPool { pool }
     }
 
-    pub fn get_connection(
-        &self,
-    ) -> Result<PooledConnection<ConnectionManager<PgConnection>>, diesel::r2d2::PoolError> {
-        self.pool.get()
-    }
-}
-
-impl<T> IDatabase<T> for PostgresDatabase
-where
-    T: 'static
-        + Send
-        + Sync
-        + Clone
-        + diesel::Insertable<T>
-        + diesel::AsChangeset
-        + diesel::Identifiable
-        + diesel::Queryable<T, diesel::pg::Pg>
-        + diesel::Selectable<diesel::pg::Pg>
-        + Serialize
-        + Deserialize
-        + Debug,
-{
-    fn create(&self, entity: &T) -> T {
-        let conn = self.get_connection().unwrap();
-        entity.insert_into(T::table_name()).values(entity).get_result(&conn).unwrap()
+    /*
+        fn create(&mut self, entity: &T) -> T {
+            diesel::insert_into(T::table())
+                .values(entity)
+                .get_result::<T>(&mut self.conn)
+                .expect("Error creating user")
+        }
+    */
+    /*
+    fn get(&self, id: String) -> Option<T> {
+        let conn = self.pool.get().unwrap();
+        let _id = Uuid::parse_str(&id).unwrap();
+        T::table()
+            .find(_id)
+            .load::<T>(&conn)
+            .expect("Error loading users")
     }
 
-    fn read(&self, id: T) -> T {
-        let conn = self.get_connection().unwrap();
-        T::find_by_id(&id, &conn).unwrap()
+    fn update(&self, id: String, entity: T) -> T {
+        let mut conn = &self.pool.get().unwrap();
+        let _id = Uuid::parse_str(&id).unwrap();
+        diesel::update(entity.table().find(_id))
+            .set(&entity)
+            .get_result(conn)
+            .expect("Error updating user")
     }
 
-    fn update(&self, entity: T) -> T {
-        let conn = self.get_connection().unwrap();
-        entity.update(&conn)
+    fn delete(&self, id: String, entity: T) -> bool {
+        let mut conn = &self.pool.get().unwrap();
+        let _id = Uuid::parse_str(&id).unwrap();
+        diesel::delete(T::table().find(_id))
+            .execute(conn)
+            .expect("Error deleting user");
+        true
     }
 
-    fn delete(&self, id: T) -> T {
-        let conn = self.get_connection().unwrap();
-        T::delete_by_id(&id, &conn).unwrap()
-    }
+     */
 }

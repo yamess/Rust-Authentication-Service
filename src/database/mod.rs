@@ -1,2 +1,1 @@
-pub mod models;
-mod postgres;
+pub mod postgres;

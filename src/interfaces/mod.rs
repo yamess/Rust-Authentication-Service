@@ -1,1 +1,1 @@
-pub mod database_interface;
+pub mod repository_interface;
