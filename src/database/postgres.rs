@@ -1,14 +1,19 @@
+use crate::settings::configs::DatabaseConfig;
 use diesel::r2d2::{ConnectionManager, Pool};
 use diesel::PgConnection;
+use log;
 
+#[derive(Clone)]
 pub struct PostgresConnectionPool {
     pub pool: Pool<ConnectionManager<PgConnection>>,
 }
 
 impl PostgresConnectionPool {
-    fn new(database_url: &str, size: u32) -> Self {
+    pub fn new(database_config: &DatabaseConfig) -> Self {
+        let database_url = &database_config.database_url;
+        let pool_size = &database_config.pool_size;
         let pool = Pool::builder()
-            .max_size(size)
+            .max_size(*pool_size)
             .test_on_check_out(true)
             .build(ConnectionManager::new(database_url))
             .expect("Failed to create pool");

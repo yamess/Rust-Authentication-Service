@@ -1,2 +1,2 @@
 mod token_repository;
-mod user_repository;
+pub mod user_repository;

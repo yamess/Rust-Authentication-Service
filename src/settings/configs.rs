@@ -4,6 +4,7 @@ use serde::Deserialize;
 #[derive(Deserialize)]
 pub struct DatabaseConfig {
     pub database_url: String,
+    pub pool_size: u32,
 }
 
 pub struct GlobalConfig {
