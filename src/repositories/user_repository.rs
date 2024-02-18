@@ -1,10 +1,11 @@
-use crate::database::postgres::PostgresConnectionPool;
 use crate::schema::users;
-use diesel::associations::HasTable;
-use diesel::r2d2::ConnectionManager;
+
 use diesel::result::Error;
-use diesel::{AsChangeset, Insertable, PgConnection, QueryDsl, Queryable, RunQueryDsl, Selectable};
-use r2d2::Pool;
+use diesel::{
+    AsChangeset, Insertable, OptionalExtension, PgConnection, QueryDsl, Queryable, RunQueryDsl,
+    Selectable,
+};
+
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
@@ -24,7 +25,11 @@ pub struct UserRepository {
 }
 
 impl UserRepository {
-    pub fn create(db: &PostgresConnectionPool, email: String, password: String) -> Self {
+    pub fn create(
+        conn: &mut PgConnection,
+        email: String,
+        password: String,
+    ) -> diesel::QueryResult<Self> {
         let user = Self {
             id: Uuid::new_v4(),
             email,
@@ -32,20 +37,18 @@ impl UserRepository {
             created_at: chrono::Utc::now().naive_utc(),
             updated_at: None,
         };
-        let conn = &mut db.clone().pool.get().unwrap();
-        diesel::insert_into(users::table)
+        // let conn = &mut db.clone().pool.get().unwrap();
+        Ok(diesel::insert_into(users::table)
             .values(&user)
             .get_result(conn)
-            .expect("Error creating user")
+            .expect("Error creating user"))
     }
 
-    pub fn get(db: &PostgresConnectionPool, id: Uuid) -> Option<Self> {
-        let conn = &mut db.clone().pool.get().unwrap();
-        users::table.find(id).first(conn).ok()
+    pub fn get(conn: &mut PgConnection, id: Uuid) -> diesel::QueryResult<Option<Self>> {
+        users::table.find(id).first(conn).optional()
     }
 
-    pub fn update(&mut self, db: &PostgresConnectionPool) -> Option<Error> {
-        let conn = &mut db.clone().pool.get().unwrap();
+    pub fn update(&mut self, conn: &mut PgConnection) -> Option<Error> {
         self.updated_at = Some(chrono::Utc::now().naive_utc());
         diesel::update(users::table.find(self.id))
             .set(&*self)
@@ -55,12 +58,10 @@ impl UserRepository {
         Some(Error::NotFound)
     }
 
-    pub fn delete(&self, db: &PostgresConnectionPool) -> bool {
-        let conn = &mut db.clone().pool.get().unwrap();
-        diesel::delete(users::table.find(self.id))
+    pub fn delete(conn: &mut PgConnection, id: Uuid) -> bool {
+        diesel::delete(users::table.find(id))
             .execute(conn)
             .expect("Error deleting user");
-        self.drop();
         true
     }
 }

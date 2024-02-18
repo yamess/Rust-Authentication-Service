@@ -1,0 +1,460 @@
+[2024-02-18 06:47:21 - [32mINFO[0m - Thread MAIN - rust_authentication_service - line 95]: Starting server...
+[2024-02-18 06:47:21 - [32mINFO[0m - Thread MAIN - rust_authentication_service::database::postgres - line 20]: Postgres connection pool created
+[2024-02-18 06:47:21 - [32mINFO[0m - Thread MAIN - actix_server::builder - line 240]: starting 12 workers
+[2024-02-18 06:47:21 - [32mINFO[0m - Thread MAIN - actix_server::server - line 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 06:47:43 - [32mINFO[0m - Thread MAIN - actix_server::server - line 319]: SIGINT received; starting forced shutdown
+[2024-02-18 06:47:43 - [34mDEBUG[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - line 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 06:47:43 - [32mINFO[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - line 143]: accept thread stopped
+[2024-02-18 06:47:43 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:47:43 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:47:43 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:47:43 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:47:43 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:47:43 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:47:43 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:47:43 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:47:43 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:47:43 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:47:43 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:47:43 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:48:13 - [32mINFO[0m - Thread MAIN - rust_authentication_service - line 95]: Starting server...
+[2024-02-18 06:48:13 - [32mINFO[0m - Thread MAIN - rust_authentication_service::database::postgres - line 20]: Postgres connection pool created
+[2024-02-18 06:48:13 - [32mINFO[0m - Thread MAIN - actix_server::builder - line 240]: starting 12 workers
+[2024-02-18 06:48:13 - [32mINFO[0m - Thread MAIN - actix_server::server - line 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 06:51:11 - [32mINFO[0m - Thread MAIN - actix_server::server - line 319]: SIGINT received; starting forced shutdown
+[2024-02-18 06:51:11 - [34mDEBUG[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - line 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 06:51:11 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:51:11 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:51:11 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:51:11 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:51:11 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:51:11 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:51:11 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:51:11 - [32mINFO[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - line 143]: accept thread stopped
+[2024-02-18 06:51:11 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:51:11 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:51:11 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:51:11 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:51:11 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:51:16 - INFO - Thread MAIN - rust_authentication_service - line 95]: Starting server...
+[2024-02-18 06:51:17 - INFO - Thread MAIN - rust_authentication_service::database::postgres - line 20]: Postgres connection pool created
+[2024-02-18 06:51:17 - INFO - Thread MAIN - actix_server::builder - line 240]: starting 12 workers
+[2024-02-18 06:51:17 - INFO - Thread MAIN - actix_server::server - line 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 06:52:07 - INFO - Thread MAIN - actix_server::server - line 319]: SIGINT received; starting forced shutdown
+[2024-02-18 06:52:07 - DEBUG - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - line 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 06:52:07 - INFO - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:52:07 - INFO - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:52:07 - INFO - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:52:07 - INFO - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:52:07 - INFO - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:52:07 - INFO - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:52:07 - INFO - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:52:07 - INFO - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - line 143]: accept thread stopped
+[2024-02-18 06:52:07 - INFO - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:52:07 - INFO - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:52:07 - INFO - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:52:07 - INFO - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:52:07 - INFO - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - line 595]: shutting down idle worker
+[2024-02-18 06:52:12 - INFO - Thread MAIN - rust_authentication_service - LineNo: 95]: Starting server...
+[2024-02-18 06:52:12 - INFO - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 06:52:12 - INFO - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 06:52:12 - INFO - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 06:52:26 - INFO - Thread MAIN - actix_server::server - LineNo: 319]: SIGINT received; starting forced shutdown
+[2024-02-18 06:52:26 - DEBUG - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 06:52:26 - INFO - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:26 - INFO - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:26 - INFO - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:26 - INFO - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:26 - INFO - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:26 - INFO - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:26 - INFO - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:26 - INFO - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:26 - INFO - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:26 - INFO - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 143]: accept thread stopped
+[2024-02-18 06:52:26 - INFO - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:26 - INFO - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:26 - INFO - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:30 - INFO - Thread MAIN - rust_authentication_service - LineNo: 95]: Starting server...
+[2024-02-18 06:52:30 - INFO - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 06:52:30 - INFO - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 06:52:30 - INFO - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 06:52:31 - INFO - Thread MAIN - rust_authentication_service - LineNo: 95]: Starting server...
+[2024-02-18 06:52:31 - INFO - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 06:52:31 - INFO - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 06:52:31 - INFO - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 06:52:32 - INFO - Thread MAIN - actix_server::server - LineNo: 328]: SIGTERM received; starting graceful shutdown
+[2024-02-18 06:52:32 - DEBUG - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 06:52:32 - INFO - Thread MAIN - rust_authentication_service - LineNo: 95]: Starting server...
+[2024-02-18 06:52:32 - INFO - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 06:52:32 - INFO - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 06:52:32 - INFO - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 06:52:32 - INFO - Thread MAIN - rust_authentication_service - LineNo: 95]: Starting server...
+[2024-02-18 06:52:33 - INFO - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 06:52:33 - INFO - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 06:52:33 - INFO - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 06:52:33 - INFO - Thread MAIN - rust_authentication_service - LineNo: 95]: Starting server...
+[2024-02-18 06:52:33 - INFO - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 06:52:33 - INFO - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 06:52:33 - INFO - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 06:52:34 - INFO - Thread MAIN - actix_server::server - LineNo: 328]: SIGTERM received; starting graceful shutdown
+[2024-02-18 06:52:34 - INFO - Thread MAIN - rust_authentication_service - LineNo: 95]: Starting server...
+[2024-02-18 06:52:34 - INFO - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 06:52:34 - INFO - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 06:52:34 - INFO - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 06:52:34 - INFO - Thread MAIN - actix_server::server - LineNo: 319]: SIGINT received; starting forced shutdown
+[2024-02-18 06:52:34 - DEBUG - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 06:52:34 - INFO - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:34 - INFO - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:34 - INFO - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:34 - INFO - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:34 - INFO - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:34 - INFO - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:34 - INFO - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:34 - INFO - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:34 - INFO - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:34 - INFO - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 143]: accept thread stopped
+[2024-02-18 06:52:34 - INFO - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:34 - INFO - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 06:52:34 - INFO - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:02:59 - [32mINFO[0m - Thread MAIN - rust_authentication_service - LineNo: 95]: Starting server...
+[2024-02-18 07:02:59 - [32mINFO[0m - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 07:02:59 - [32mINFO[0m - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 07:02:59 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 07:03:27 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 319]: SIGINT received; starting forced shutdown
+[2024-02-18 07:03:27 - [34mDEBUG[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 07:03:27 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:03:27 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:03:27 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:03:27 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:03:27 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:03:27 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:03:27 - [32mINFO[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 143]: accept thread stopped
+[2024-02-18 07:03:27 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:03:27 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:03:27 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:03:27 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:03:27 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:03:27 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:03:33 - [32mINFO[0m - Thread MAIN - rust_authentication_service - LineNo: 95]: Starting server...
+[2024-02-18 07:03:33 - [32mINFO[0m - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 07:03:33 - [32mINFO[0m - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 07:03:33 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 07:24:06 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 319]: SIGINT received; starting forced shutdown
+[2024-02-18 07:24:06 - [34mDEBUG[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 07:24:06 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:24:06 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:24:06 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:24:06 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:24:06 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:24:06 - [32mINFO[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 143]: accept thread stopped
+[2024-02-18 07:24:06 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:24:06 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:24:06 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:24:06 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:24:06 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:24:06 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:24:06 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:24:10 - [32mINFO[0m - Thread MAIN - rust_authentication_service - LineNo: 95]: Starting server...
+[2024-02-18 07:24:10 - [32mINFO[0m - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 07:24:10 - [32mINFO[0m - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 07:24:10 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 07:25:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 07:25:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "POST /users HTTP/1.1" 200 157 "-" "PostmanRuntime/7.36.3" 0.369133
+[2024-02-18 07:26:13 - [34mDEBUG[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 363]: Error in response: BlockingError
+[2024-02-18 07:26:13 - [34mDEBUG[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 363]: Error in response: BlockingError
+[2024-02-18 07:26:13 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 07:26:13 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "POST /users HTTP/1.1" 500 46 "-" "PostmanRuntime/7.36.3" 0.002366
+[2024-02-18 07:26:27 - [34mDEBUG[0m - Thread ACTIX-SERVER WORKER 2 - actix_web::middleware::logger - LineNo: 363]: Error in response: BlockingError
+[2024-02-18 07:26:27 - [34mDEBUG[0m - Thread ACTIX-SERVER WORKER 2 - actix_web::middleware::logger - LineNo: 363]: Error in response: BlockingError
+[2024-02-18 07:26:27 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 07:26:27 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "POST /users HTTP/1.1" 500 46 "-" "PostmanRuntime/7.36.3" 0.003621
+[2024-02-18 07:33:46 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 07:33:46 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "POST /users HTTP/1.1" 200 156 "-" "PostmanRuntime/7.36.3" 0.017174
+[2024-02-18 07:36:17 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 319]: SIGINT received; starting forced shutdown
+[2024-02-18 07:36:17 - [34mDEBUG[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 07:36:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:36:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:36:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:36:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:36:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:36:17 - [32mINFO[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 143]: accept thread stopped
+[2024-02-18 07:36:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:36:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:36:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:36:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:36:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:36:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:36:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:36:22 - [32mINFO[0m - Thread MAIN - rust_authentication_service - LineNo: 95]: Starting server...
+[2024-02-18 07:36:22 - [32mINFO[0m - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 07:36:22 - [32mINFO[0m - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 07:36:22 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 07:36:29 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 07:36:29 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users HTTP/1.1" 200 9 "-" "PostmanRuntime/7.36.3" 0.000163
+[2024-02-18 07:37:55 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 319]: SIGINT received; starting forced shutdown
+[2024-02-18 07:37:55 - [34mDEBUG[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 07:37:55 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:37:55 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:37:55 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:37:55 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:37:55 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:37:55 - [32mINFO[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 143]: accept thread stopped
+[2024-02-18 07:37:55 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:37:55 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:37:55 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:37:55 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:37:55 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:37:55 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:37:55 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:38:04 - [32mINFO[0m - Thread MAIN - rust_authentication_service - LineNo: 21]: Starting server...
+[2024-02-18 07:38:04 - [32mINFO[0m - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 07:38:04 - [32mINFO[0m - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 07:38:04 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 07:38:14 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 07:38:14 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users HTTP/1.1" 200 9 "-" "PostmanRuntime/7.36.3" 0.000272
+[2024-02-18 07:38:15 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 07:38:15 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users HTTP/1.1" 200 9 "-" "PostmanRuntime/7.36.3" 0.000230
+[2024-02-18 07:38:15 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 07:38:15 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users HTTP/1.1" 200 9 "-" "PostmanRuntime/7.36.3" 0.000290
+[2024-02-18 07:38:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 07:38:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users HTTP/1.1" 200 9 "-" "PostmanRuntime/7.36.3" 0.000284
+[2024-02-18 07:38:20 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 07:38:20 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users HTTP/1.1" 200 9 "-" "PostmanRuntime/7.36.3" 0.000212
+[2024-02-18 07:38:53 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 319]: SIGINT received; starting forced shutdown
+[2024-02-18 07:38:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:38:53 - [34mDEBUG[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 07:38:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:38:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:38:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:38:53 - [32mINFO[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 143]: accept thread stopped
+[2024-02-18 07:38:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:38:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:38:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:38:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:38:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:38:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:38:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:38:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:38:59 - [32mINFO[0m - Thread MAIN - rust_authentication_service - LineNo: 21]: Starting server...
+[2024-02-18 07:38:59 - [32mINFO[0m - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 07:38:59 - [32mINFO[0m - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 07:38:59 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 07:39:17 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 319]: SIGINT received; starting forced shutdown
+[2024-02-18 07:39:17 - [34mDEBUG[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 07:39:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:17 - [32mINFO[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 143]: accept thread stopped
+[2024-02-18 07:39:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:23 - [32mINFO[0m - Thread MAIN - rust_authentication_service - LineNo: 21]: Starting server...
+[2024-02-18 07:39:23 - [32mINFO[0m - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 07:39:23 - [32mINFO[0m - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 07:39:23 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 07:39:36 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 319]: SIGINT received; starting forced shutdown
+[2024-02-18 07:39:36 - [34mDEBUG[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 07:39:36 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:36 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:36 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:36 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:36 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:36 - [32mINFO[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 143]: accept thread stopped
+[2024-02-18 07:39:36 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:36 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:36 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:36 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:36 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 07:39:43 - [32mINFO[0m - Thread MAIN - rust_authentication_service - LineNo: 21]: Starting server...
+[2024-02-18 07:39:43 - [32mINFO[0m - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 07:39:43 - [32mINFO[0m - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 07:39:43 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 08:11:17 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 319]: SIGINT received; starting forced shutdown
+[2024-02-18 08:11:17 - [34mDEBUG[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 08:11:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:11:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:11:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:11:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:11:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:11:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:11:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:11:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:11:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:11:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:11:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:11:17 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:11:17 - [32mINFO[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 143]: accept thread stopped
+[2024-02-18 08:11:23 - [32mINFO[0m - Thread MAIN - rust_authentication_service - LineNo: 21]: Starting server...
+[2024-02-18 08:11:23 - [32mINFO[0m - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 08:11:23 - [32mINFO[0m - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 08:11:23 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 08:12:20 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 08:12:20 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users HTTP/1.1" 404 0 "-" "PostmanRuntime/7.36.3" 0.000156
+[2024-02-18 08:13:23 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 08:13:23 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users HTTP/1.1" 404 0 "-" "PostmanRuntime/7.36.3" 0.000117
+[2024-02-18 08:13:52 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 319]: SIGINT received; starting forced shutdown
+[2024-02-18 08:13:52 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:13:52 - [34mDEBUG[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 08:13:52 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:13:52 - [32mINFO[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 143]: accept thread stopped
+[2024-02-18 08:13:52 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:13:52 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:13:52 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:13:52 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:13:52 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:13:52 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:13:52 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:13:52 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:13:52 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:13:52 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:13:57 - [32mINFO[0m - Thread MAIN - rust_authentication_service - LineNo: 21]: Starting server...
+[2024-02-18 08:13:57 - [32mINFO[0m - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 08:13:57 - [32mINFO[0m - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 08:13:57 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 08:14:00 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 08:14:00 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users HTTP/1.1" 404 0 "-" "PostmanRuntime/7.36.3" 0.000126
+[2024-02-18 08:15:30 - [34mDEBUG[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::types::json - LineNo: 179]: Failed to deserialize Json from payload. Request path: /users/d3f79727-de77-4736-b75c-e72a695191cc
+[2024-02-18 08:15:30 - [34mDEBUG[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 363]: Error in response: Deserialize(Error("invalid type: map, expected a string", line: 1, column: 0))
+[2024-02-18 08:15:30 - [34mDEBUG[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 363]: Error in response: Deserialize(Error("invalid type: map, expected a string", line: 1, column: 0))
+[2024-02-18 08:15:30 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 08:15:30 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users/d3f79727-de77-4736-b75c-e72a695191cc HTTP/1.1" 400 79 "-" "PostmanRuntime/7.36.3" 0.000476
+[2024-02-18 08:24:23 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 319]: SIGINT received; starting forced shutdown
+[2024-02-18 08:24:23 - [34mDEBUG[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 08:24:23 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:24:23 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:24:23 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:24:23 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:24:23 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:24:23 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:24:23 - [32mINFO[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 143]: accept thread stopped
+[2024-02-18 08:24:23 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:24:23 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:24:23 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:24:23 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:24:23 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:24:23 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:35:46 - [32mINFO[0m - Thread MAIN - rust_authentication_service - LineNo: 21]: Starting server...
+[2024-02-18 08:35:47 - [32mINFO[0m - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 08:35:47 - [32mINFO[0m - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 08:35:47 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 08:37:16 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 319]: SIGINT received; starting forced shutdown
+[2024-02-18 08:37:16 - [34mDEBUG[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 08:37:16 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:37:16 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:37:16 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:37:16 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:37:16 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:37:16 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:37:16 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:37:16 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:37:16 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:37:16 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:37:16 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:37:16 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:37:16 - [32mINFO[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 143]: accept thread stopped
+[2024-02-18 08:37:22 - [32mINFO[0m - Thread MAIN - rust_authentication_service - LineNo: 21]: Starting server...
+[2024-02-18 08:37:22 - [32mINFO[0m - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 08:37:22 - [32mINFO[0m - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 08:37:22 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 08:37:28 - [34mDEBUG[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::types::json - LineNo: 179]: Failed to deserialize Json from payload. Request path: /users/d3f79727-de77-4736-b75c-e72a695191cc
+[2024-02-18 08:37:28 - [34mDEBUG[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 363]: Error in response: Deserialize(Error("invalid type: map, expected a string", line: 1, column: 0))
+[2024-02-18 08:37:28 - [34mDEBUG[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 363]: Error in response: Deserialize(Error("invalid type: map, expected a string", line: 1, column: 0))
+[2024-02-18 08:37:28 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 08:37:28 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users/d3f79727-de77-4736-b75c-e72a695191cc HTTP/1.1" 400 79 "-" "PostmanRuntime/7.36.3" 0.000558
+[2024-02-18 08:37:53 - [34mDEBUG[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::types::json - LineNo: 179]: Failed to deserialize Json from payload. Request path: /users/d3f79727-de77-4736-b75c-e72a695191cc
+[2024-02-18 08:37:53 - [34mDEBUG[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 363]: Error in response: ContentType
+[2024-02-18 08:37:53 - [34mDEBUG[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 363]: Error in response: ContentType
+[2024-02-18 08:37:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 08:37:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users/d3f79727-de77-4736-b75c-e72a695191cc HTTP/1.1" 400 18 "-" "PostmanRuntime/7.36.3" 0.000454
+[2024-02-18 08:39:42 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 319]: SIGINT received; starting forced shutdown
+[2024-02-18 08:39:42 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:39:42 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:39:42 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:39:42 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:39:42 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:39:42 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:39:42 - [34mDEBUG[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 08:39:42 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:39:42 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:39:42 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:39:42 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:39:42 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:39:42 - [32mINFO[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 143]: accept thread stopped
+[2024-02-18 08:39:42 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:39:48 - [32mINFO[0m - Thread MAIN - rust_authentication_service - LineNo: 21]: Starting server...
+[2024-02-18 08:39:48 - [32mINFO[0m - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 08:39:48 - [32mINFO[0m - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 08:39:48 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 08:40:04 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 08:40:04 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users/d3f79727-de77-4736-b75c-e72a695191cc HTTP/1.1" 200 156 "-" "PostmanRuntime/7.36.3" 0.003479
+[2024-02-18 08:46:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 08:46:53 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users/d3f79727-de77-4736-b75c-e72a695191cc HTTP/1.1" 200 156 "-" "PostmanRuntime/7.36.3" 0.001907
+[2024-02-18 08:46:57 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 319]: SIGINT received; starting forced shutdown
+[2024-02-18 08:46:57 - [34mDEBUG[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 08:46:57 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:46:57 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:46:57 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - LineNo: 608]: force shutdown worker, closing 1 connections
+[2024-02-18 08:46:57 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:46:57 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:46:57 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:46:57 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:46:57 - [32mINFO[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 143]: accept thread stopped
+[2024-02-18 08:46:57 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:46:57 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:46:57 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:46:57 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:46:57 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:47:32 - [32mINFO[0m - Thread MAIN - rust_authentication_service - LineNo: 21]: Starting server...
+[2024-02-18 08:47:32 - [32mINFO[0m - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 08:47:32 - [32mINFO[0m - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 08:47:32 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 08:47:40 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 08:47:40 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users/d3f79727-de77-4736-b75c-e72a695191cc HTTP/1.1" 200 156 "-" "PostmanRuntime/7.36.3" 0.004176
+[2024-02-18 08:48:24 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 319]: SIGINT received; starting forced shutdown
+[2024-02-18 08:48:24 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:48:24 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:48:24 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 9 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:48:24 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:48:24 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:48:24 - [34mDEBUG[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 309]: paused accepting connections on 0.0.0.0:8080
+[2024-02-18 08:48:24 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 5 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:48:24 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 6 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:48:24 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 7 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:48:24 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 10 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:48:24 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 8 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:48:24 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 11 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:48:24 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_server::worker - LineNo: 595]: shutting down idle worker
+[2024-02-18 08:48:24 - [32mINFO[0m - Thread ACTIX-SERVER ACCEPTOR - actix_server::accept - LineNo: 143]: accept thread stopped
+[2024-02-18 08:48:30 - [32mINFO[0m - Thread MAIN - rust_authentication_service - LineNo: 21]: Starting server...
+[2024-02-18 08:48:30 - [32mINFO[0m - Thread MAIN - rust_authentication_service::database::postgres - LineNo: 20]: Postgres connection pool created
+[2024-02-18 08:48:30 - [32mINFO[0m - Thread MAIN - actix_server::builder - LineNo: 240]: starting 12 workers
+[2024-02-18 08:48:30 - [32mINFO[0m - Thread MAIN - actix_server::server - LineNo: 197]: Tokio runtime found; starting in existing Tokio runtime
+[2024-02-18 08:48:32 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - rust_authentication_service::routes::user_route - LineNo: 29]: retrieving user d3f79727-de77-4736-b75c-e72a695191cc data
+[2024-02-18 08:48:32 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 08:48:32 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 0 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users/d3f79727-de77-4736-b75c-e72a695191cc HTTP/1.1" 200 156 "-" "PostmanRuntime/7.36.3" 0.003708
+[2024-02-18 08:48:48 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - rust_authentication_service::routes::user_route - LineNo: 29]: retrieving user d3f79727-de77-4736-b75c-e72a695191cc data
+[2024-02-18 08:48:48 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 08:48:48 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 1 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users/d3f79727-de77-4736-b75c-e72a695191cc HTTP/1.1" 200 156 "-" "PostmanRuntime/7.36.3" 0.001994
+[2024-02-18 08:48:54 - [34mDEBUG[0m - Thread ACTIX-SERVER WORKER 2 - actix_web::types::path - LineNo: 85]: Failed during Path extractor deserialization. Request path: "/users/d3f79727-de77-4736-b75c-e72a695191c"
+[2024-02-18 08:48:54 - [34mDEBUG[0m - Thread ACTIX-SERVER WORKER 2 - actix_web::middleware::logger - LineNo: 363]: Error in response: Error("UUID parsing failed: invalid group length in group 4: expected 12, found 11")
+[2024-02-18 08:48:54 - [34mDEBUG[0m - Thread ACTIX-SERVER WORKER 2 - actix_web::middleware::logger - LineNo: 363]: Error in response: Error("UUID parsing failed: invalid group length in group 4: expected 12, found 11")
+[2024-02-18 08:48:54 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 08:48:54 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 2 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users/d3f79727-de77-4736-b75c-e72a695191c HTTP/1.1" 404 75 "-" "PostmanRuntime/7.36.3" 0.000454
+[2024-02-18 08:49:03 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - rust_authentication_service::routes::user_route - LineNo: 29]: retrieving user d3f79727-de77-4736-b75c-e72a695191cc data
+[2024-02-18 08:49:03 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 08:49:03 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 3 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users/d3f79727-de77-4736-b75c-e72a695191cc HTTP/1.1" 200 156 "-" "PostmanRuntime/7.36.3" 0.002345
+[2024-02-18 08:49:21 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - rust_authentication_service::routes::user_route - LineNo: 29]: retrieving user d3f79727-de77-4736-b75c-e72a695191cc data
+[2024-02-18 08:49:21 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 08:49:21 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users/d3f79727-de77-4736-b75c-e72a695191cc HTTP/1.1" 200 156 "-" "PostmanRuntime/7.36.3" 0.002112
+[2024-02-18 08:49:23 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - rust_authentication_service::routes::user_route - LineNo: 29]: retrieving user d3f79727-de77-4736-b75c-e72a695191cc data
+[2024-02-18 08:49:23 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 08:49:23 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users/d3f79727-de77-4736-b75c-e72a695191cc HTTP/1.1" 200 156 "-" "PostmanRuntime/7.36.3" 0.001633
+[2024-02-18 08:49:24 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - rust_authentication_service::routes::user_route - LineNo: 29]: retrieving user d3f79727-de77-4736-b75c-e72a695191cc data
+[2024-02-18 08:49:24 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 PostmanRuntime/7.36.3
+[2024-02-18 08:49:24 - [32mINFO[0m - Thread ACTIX-SERVER WORKER 4 - actix_web::middleware::logger - LineNo: 420]: 127.0.0.1 "GET /users/d3f79727-de77-4736-b75c-e72a695191cc HTTP/1.1" 200 156 "-" "PostmanRuntime/7.36.3" 0.001998

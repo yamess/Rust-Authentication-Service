@@ -21,3 +21,6 @@ migration-rollback:
 
 migration-redo:
 	diesel migration redo
+
+run-web:
+	cargo watch -x run
