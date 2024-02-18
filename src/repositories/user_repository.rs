@@ -60,6 +60,7 @@ impl UserRepository {
         diesel::delete(users::table.find(self.id))
             .execute(conn)
             .expect("Error deleting user");
+        self.drop();
         true
     }
 }

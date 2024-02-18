@@ -26,14 +26,14 @@ fn main() {
     /*
     let user_repo = UserRepository::create(
         &database,
-        String::from("newme@gmail.com"),
+        String::from("yamess@gmail.com"),
         String::from("password1234"),
     );
-    println!("{:?}", user_repo);
-     */
+    log::info!("{:?}", user_repo);
+    */
 
     // Get user by id
-    let user_id = Uuid::parse_str("8e86955f-a3ba-4e9d-9716-bb53b1bb730b").unwrap();
+    let user_id = Uuid::parse_str("99984e30-04d3-4a43-9209-73b5a0d34980").unwrap();
     let mut user = match UserRepository::get(&database, user_id) {
         Some(user) => user,
         None => {
@@ -41,12 +41,12 @@ fn main() {
             return;
         }
     };
-    log::info!("{:?}", user);
+    log::info!("Retrieved user: {:?}", user);
 
     // Update user
-    user.email = String::from("newemail@yahoo.fr");
+    user.email = String::from("babdongo@yahoo.fr");
     user.update(&database).expect("Error updating user");
-    log::info!("{:?}", user);
+    log::info!("Updated user: {:?}", user);
 
     /*
      let connection = &mut create_connection(&config.database.database_url);
