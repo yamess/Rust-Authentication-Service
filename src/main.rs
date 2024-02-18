@@ -10,13 +10,15 @@ mod settings;
 use crate::database::postgres::PostgresConnectionPool;
 use crate::routes::user_route::get_users;
 use actix_web::{middleware, web, App, HttpResponse, HttpServer};
+use chrono::Utc;
 use helpers::logger::*;
 use routes::user_route::create_user;
 use settings::configs::GlobalConfig;
 
 #[tokio::main]
 async fn main() -> std::io::Result<()> {
-    let _ = setup_logger("output.txt");
+    let file_name = format!("logs/{}.log", Utc::now().format("%Y-%m-%d"));
+    let _ = setup_logger(&file_name);
     let config = GlobalConfig::new();
     log::info!("Starting server...");
 
