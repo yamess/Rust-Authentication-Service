@@ -9,4 +9,5 @@ pub struct CreateUser {
 #[derive(Serialize, Deserialize, Debug)]
 pub struct UpdateUser {
     pub id: String,
+    pub password: String,
 }

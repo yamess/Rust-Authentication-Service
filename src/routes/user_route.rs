@@ -38,3 +38,18 @@ async fn get_users(
         None => Ok(HttpResponse::NotFound().finish()),
     }
 }
+
+#[post("/users/{id}")]
+async fn update_user(
+    pool: web::Data<DbPool>,
+    user_data: web::Json<UpdateUser>,
+) -> actix_web::Result<impl Responder> {
+    let user_data = user_data.into_inner();
+    let updated_user = web::block(move || {
+        let mut conn = pool.get().expect("couldn't get db connection from pool");
+        UserRepository::update(&mut conn, user_data.id, user_data)
+    })
+    .await?
+    .map_err(error::ErrorInternalServerError)?;
+    Ok(HttpResponse::Ok().json(updated_user))
+}
