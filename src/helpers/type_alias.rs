@@ -1,5 +1,5 @@
-use diesel::PgConnection;
-use diesel::r2d2::ConnectionManager;
-use r2d2::Pool;
+use bb8::Pool;
+use diesel_async::AsyncPgConnection;
+use diesel_async::pooled_connection::AsyncDieselConnectionManager;
 
-pub type DbPool = Pool<ConnectionManager<PgConnection>>;
+pub type DbPool = Pool<AsyncDieselConnectionManager<AsyncPgConnection>>;

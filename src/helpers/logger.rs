@@ -9,8 +9,24 @@ pub fn setup_logger(file_path: &str) -> Result<(), fern::InitError> {
         .warn(Color::Yellow)
         .error(Color::BrightRed);
 
-    fern::Dispatch::new()
-        .level(log::LevelFilter::Debug)
+    let file_dispatcher = fern::Dispatch::new()
+        .format(move |out, message, record| {
+            out.finish(format_args!(
+                "[{datetime} - {level} - Thread {thread} - {target} - LineNo: {line}]: {message}",
+                datetime = Utc::now().format("%Y-%m-%d %H:%M:%S"),
+                level = record.level(),
+                thread = std::thread::current()
+                    .name()
+                    .unwrap_or("unnamed")
+                    .to_uppercase(),
+                target = record.target(),
+                line = record.line().unwrap(),
+                message = message
+            ))
+        })
+        .chain(fern::log_file(file_path).unwrap());
+
+    let console_dispatcher = fern::Dispatch::new()
         .format(move |out, message, record| {
             out.finish(format_args!(
                 "[{datetime} - {level} - Thread {thread} - {target} - LineNo: {line}]: {message}",
@@ -25,8 +41,12 @@ pub fn setup_logger(file_path: &str) -> Result<(), fern::InitError> {
                 message = message
             ))
         })
-        .chain(std::io::stdout())
-        .chain(fern::log_file(file_path).unwrap())
+        .chain(std::io::stdout());
+
+    fern::Dispatch::new()
+        .level(log::LevelFilter::Info)
+        .chain(console_dispatcher)
+        .chain(file_dispatcher)
         .apply()?;
     Ok(())
 }

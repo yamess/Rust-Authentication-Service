@@ -1,13 +1,10 @@
-use crate::schema::users;
-
+use diesel::{AsChangeset, Insertable, Queryable, QueryDsl, Selectable};
 use diesel::result::Error;
-use diesel::{
-    AsChangeset, Insertable, OptionalExtension, PgConnection, QueryDsl, Queryable, RunQueryDsl,
-    Selectable,
-};
-
+use diesel_async::{AsyncPgConnection, RunQueryDsl};
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
+
+use crate::schema::users;
 
 // UserModel definition
 #[derive(Insertable, Queryable, Selectable, Deserialize, Serialize, AsChangeset, Debug)]
@@ -20,16 +17,17 @@ pub struct UserRepository {
     pub password: String,
     #[diesel(sql_type = diesel::sql_types::Timestamp)]
     pub created_at: chrono::NaiveDateTime,
-    #[diesel(sql_type = diesel::sql_types::Nullable<diesel::sql_types::Timestamp>)]
+    #[diesel(sql_type = diesel::sql_types::Nullable < diesel::sql_types::Timestamp >)]
     pub updated_at: Option<chrono::NaiveDateTime>,
 }
 
+
 impl UserRepository {
-    pub fn create(
-        conn: &mut PgConnection,
+    pub async fn create(
+        conn: &mut AsyncPgConnection,
         email: String,
         password: String,
-    ) -> diesel::QueryResult<Self> {
+    ) -> Result<Self, Error> {
         let user = Self {
             id: Uuid::new_v4(),
             email,
@@ -37,31 +35,62 @@ impl UserRepository {
             created_at: chrono::Utc::now().naive_utc(),
             updated_at: None,
         };
+
         // let conn = &mut db.clone().pool.get().unwrap();
-        Ok(diesel::insert_into(users::table)
+        diesel::insert_into(users::table)
             .values(&user)
             .get_result(conn)
-            .expect("Error creating user"))
+            .await
     }
 
-    pub fn get(conn: &mut PgConnection, id: Uuid) -> diesel::QueryResult<Option<Self>> {
-        users::table.find(id).first(conn).optional()
+    pub async fn get(conn: &mut AsyncPgConnection, id: Uuid) -> Result<Option<Self>, Error> {
+        users::table.find(id).get_result(conn).await.map(Some).or_else(|e| {
+            if e == Error::NotFound {
+                log::warn!("User not found for id {}", id);
+                Ok(None)
+            } else {
+                log::error!("Failed to get user: {}", e);
+                Err(e)
+            }
+        })
     }
 
-    pub fn update(&mut self, conn: &mut PgConnection) -> Option<Error> {
-        self.updated_at = Some(chrono::Utc::now().naive_utc());
-        diesel::update(users::table.find(self.id))
-            .set(&*self)
-            .get_result::<Self>(conn)
-            .ok();
-        log::info!("User updated: {}", self.id);
-        Some(Error::NotFound)
+    pub async fn update(
+        conn: &mut AsyncPgConnection,
+        id: Uuid,
+        email: String,
+        password: String,
+    ) -> Result<Self, Error> {
+        let user = Self {
+            id,
+            email,
+            password,
+            created_at: chrono::Utc::now().naive_utc(),
+            updated_at: Some(chrono::Utc::now().naive_utc()),
+        };
+
+        diesel::update(users::table.find(id))
+            .set(&user)
+            .get_result(conn)
+            .await
+            .map_err(|e| {
+                log::error!("Failed to update user: {}", e);
+                e
+            })
     }
 
-    pub fn delete(conn: &mut PgConnection, id: Uuid) -> bool {
-        diesel::delete(users::table.find(id))
+    pub async fn delete(conn: &mut AsyncPgConnection, id: Uuid) -> usize {
+        let num_deleted_rows = diesel::delete(users::table.find(id))
             .execute(conn)
-            .expect("Error deleting user");
-        true
+            .await
+            .map_err(|e| {
+                log::error!("Failed to delete user: {}", e);
+                e
+            })
+            .map(|num_deleted_rows| {
+                log::info!("Deleted {} user(s)", num_deleted_rows);
+                num_deleted_rows
+            });
+        num_deleted_rows.unwrap_or(0)
     }
 }

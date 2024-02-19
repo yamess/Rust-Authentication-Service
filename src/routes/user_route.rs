@@ -1,8 +1,9 @@
+use actix_web::{delete, error, get, HttpResponse, post, Responder, web};
+use uuid::Uuid;
+
 use crate::helpers::type_alias::DbPool;
 use crate::repositories::user_repository::UserRepository;
-use crate::schemas::user_schema::{CreateUser, UpdateUser};
-use actix_web::{error, get, post, web, HttpResponse, Responder};
-use uuid::Uuid;
+use crate::schemas::user_schema::CreateUser;
 
 #[post("/users")]
 pub async fn create_user(
@@ -10,12 +11,19 @@ pub async fn create_user(
     user: web::Json<CreateUser>,
 ) -> actix_web::Result<impl Responder> {
     let user_data = user.into_inner();
-    let created_user = web::block(move || {
-        let mut conn = pool.get().expect("couldn't get db connection from pool");
-        UserRepository::create(&mut conn, user_data.email, user_data.password)
-    })
-    .await?
-    .map_err(error::ErrorInternalServerError)?;
+    let mut async_pool = pool
+        .get()
+        .await
+        .expect("Failed to get pool");
+
+    let created_user =
+        UserRepository::create(&mut async_pool, user_data.email, user_data.password)
+            .await
+            .map_err(|e| {
+                log::error!("Failed to create user: {}", e);
+                error::ErrorInternalServerError(e)
+            })?;
+
     Ok(HttpResponse::Ok().json(created_user))
 }
 
@@ -26,30 +34,46 @@ async fn get_users(
 ) -> actix_web::Result<impl Responder> {
     let id = id.into_inner();
     log::info!("retrieving user {} data", id);
-    let user = web::block(move || {
-        let mut conn = pool.get().expect("couldn't get db connection from pool");
-        UserRepository::get(&mut conn, id)
-    })
-    .await?
-    .map_err(error::ErrorInternalServerError)?;
 
+    let mut async_pool = pool
+        .get()
+        .await
+        .expect("Failed to get pool");
+
+    let user = UserRepository::get(&mut async_pool, id)
+        .await
+        .map_err(|e| {
+            log::error!("Failed to get user: {}", e);
+            error::ErrorInternalServerError(e)
+        })?;
     match user {
         Some(user) => Ok(HttpResponse::Ok().json(user)),
         None => Ok(HttpResponse::NotFound().finish()),
     }
 }
 
-#[post("/users/{id}")]
-async fn update_user(
+#[delete("/users/{id}")]
+async fn delete_user(
     pool: web::Data<DbPool>,
-    user_data: web::Json<UpdateUser>,
+    id: web::Path<Uuid>,
 ) -> actix_web::Result<impl Responder> {
-    let user_data = user_data.into_inner();
-    let updated_user = web::block(move || {
-        let mut conn = pool.get().expect("couldn't get db connection from pool");
-        UserRepository::update(&mut conn, user_data.id, user_data)
-    })
-    .await?
-    .map_err(error::ErrorInternalServerError)?;
-    Ok(HttpResponse::Ok().json(updated_user))
+    let id = id.into_inner();
+    log::info!("deleting user {} data", id);
+
+    let mut async_pool = pool
+        .get()
+        .await
+        .map_err(|e| {
+            log::error!("Failed to get pool: {}", e);
+            error::ErrorInternalServerError(e)
+        })?;
+
+    let num_deleted_row = UserRepository::delete(&mut async_pool, id)
+        .await;
+    match num_deleted_row {
+        1 => Ok(HttpResponse::Ok().finish()),
+        _ => Ok(HttpResponse::NotFound().finish())
+    }
+    //Ok(HttpResponse::Ok().json(user))
 }
+
