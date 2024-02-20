@@ -1,4 +1,4 @@
-use actix_web::{App, HttpResponse, HttpServer, middleware, web};
+use actix_web::{dev::Service, middleware, web, App, HttpMessage, HttpResponse, HttpServer};
 use chrono::Utc;
 
 use database::postgres::AsyncPostgresConnectionPool;
@@ -8,13 +8,14 @@ use settings::configs::GlobalConfig;
 
 mod database;
 mod helpers;
+mod middlewares;
 mod repositories;
 mod routes;
 mod schema;
 mod schemas;
 mod server;
-mod settings;
 mod services;
+mod settings;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
@@ -42,8 +43,8 @@ async fn main() -> std::io::Result<()> {
             .service(get_users)
             .service(delete_user)
     })
-        //.workers(5)
-        .bind(("0.0.0.0", 8080))?
-        .run()
-        .await
+    //.workers(5)
+    .bind(("0.0.0.0", 8080))?
+    .run()
+    .await
 }

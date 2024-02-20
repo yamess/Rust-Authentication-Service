@@ -12,7 +12,8 @@ pub fn setup_logger(file_path: &str) -> Result<(), fern::InitError> {
     let file_dispatcher = fern::Dispatch::new()
         .format(move |out, message, record| {
             out.finish(format_args!(
-                "[{datetime} - {level} - Thread {thread} - {target} - LineNo: {line}]: {message}",
+                "[{datetime} - {level} - Thread {thread} - {target} - LineNo: {line}]: \
+                {message}",
                 datetime = Utc::now().format("%Y-%m-%d %H:%M:%S"),
                 level = record.level(),
                 thread = std::thread::current()
