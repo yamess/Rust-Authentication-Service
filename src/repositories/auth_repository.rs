@@ -1,6 +1,6 @@
-pub struct AuthService;
+pub struct AuthRepository;
 
-impl AuthService {
+impl AuthRepository {
     pub async fn hash_password(password: &str) -> String {
         bcrypt::hash(password, 12).unwrap()
     }

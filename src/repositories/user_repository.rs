@@ -1,5 +1,6 @@
-use diesel::{AsChangeset, Insertable, Queryable, QueryDsl, Selectable};
+use crate::repositories::auth_repository::AuthRepository;
 use diesel::result::Error;
+use diesel::{AsChangeset, Insertable, QueryDsl, Queryable, Selectable};
 use diesel_async::{AsyncPgConnection, RunQueryDsl};
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
@@ -21,17 +22,17 @@ pub struct UserRepository {
     pub updated_at: Option<chrono::NaiveDateTime>,
 }
 
-
 impl UserRepository {
     pub async fn create(
         conn: &mut AsyncPgConnection,
         email: String,
         password: String,
     ) -> Result<Self, Error> {
+        let hashed_password = AuthRepository::hash_password(&password).await;
         let user = Self {
             id: Uuid::new_v4(),
             email,
-            password,
+            password: hashed_password,
             created_at: chrono::Utc::now().naive_utc(),
             updated_at: None,
         };
@@ -44,15 +45,20 @@ impl UserRepository {
     }
 
     pub async fn get(conn: &mut AsyncPgConnection, id: Uuid) -> Result<Option<Self>, Error> {
-        users::table.find(id).get_result(conn).await.map(Some).or_else(|e| {
-            if e == Error::NotFound {
-                log::warn!("User not found for id {}", id);
-                Ok(None)
-            } else {
-                log::error!("Failed to get user: {}", e);
-                Err(e)
-            }
-        })
+        users::table
+            .find(id)
+            .get_result(conn)
+            .await
+            .map(Some)
+            .or_else(|e| {
+                if e == Error::NotFound {
+                    log::warn!("User not found for id {}", id);
+                    Ok(None)
+                } else {
+                    log::error!("Failed to get user: {}", e);
+                    Err(e)
+                }
+            })
     }
 
     pub async fn update(

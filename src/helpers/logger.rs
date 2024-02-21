@@ -1,5 +1,7 @@
+use actix_web::web;
 use chrono::Utc;
 use fern::colors::{Color, ColoredLevelConfig};
+use std::sync::Arc;
 
 pub fn setup_logger(file_path: &str) -> Result<(), fern::InitError> {
     let colors = ColoredLevelConfig::new()
@@ -12,7 +14,7 @@ pub fn setup_logger(file_path: &str) -> Result<(), fern::InitError> {
     let file_dispatcher = fern::Dispatch::new()
         .format(move |out, message, record| {
             out.finish(format_args!(
-                "[{datetime} - {level} - Thread {thread} - {target} - LineNo: {line}]: \
+                "[{datetime} - {level} - Thread {thread} - {target}: {line}]: \
                 {message}",
                 datetime = Utc::now().format("%Y-%m-%d %H:%M:%S"),
                 level = record.level(),
@@ -30,7 +32,8 @@ pub fn setup_logger(file_path: &str) -> Result<(), fern::InitError> {
     let console_dispatcher = fern::Dispatch::new()
         .format(move |out, message, record| {
             out.finish(format_args!(
-                "[{datetime} - {level} - Thread {thread} - {target} - LineNo: {line}]: {message}",
+                "[{datetime} - {level} - Thread {thread} - {target}: {line}]: \
+                {message}",
                 datetime = Utc::now().format("%Y-%m-%d %H:%M:%S"),
                 level = colors.color(record.level()),
                 thread = std::thread::current()
