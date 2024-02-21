@@ -1,14 +1,15 @@
 use crate::repositories::auth_repository::AuthRepository;
+use crate::schema::users;
 use diesel::result::Error;
 use diesel::{AsChangeset, Insertable, QueryDsl, Queryable, Selectable};
 use diesel_async::{AsyncPgConnection, RunQueryDsl};
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
-use crate::schema::users;
-
 // UserModel definition
-#[derive(Insertable, Queryable, Selectable, Deserialize, Serialize, AsChangeset, Debug)]
+#[derive(
+    Insertable, Queryable, Selectable, Deserialize, Serialize, AsChangeset, Debug, PartialEq,
+)]
 #[diesel(table_name = users)]
 pub struct UserRepository {
     pub id: Uuid,
